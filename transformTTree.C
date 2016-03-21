@@ -95,7 +95,7 @@ int main (int argc, char **argv) {
   fTree->Branch("px", px, "px[n_part]/D");
   fTree->Branch("py", py, "py[n_part]/D");
   fTree->Branch("pz", pz, "pz[n_part]/D");
-  fTree->Branch("particle_id", particle_id, "particle_id[n_part]/D");
+  fTree->Branch("particle_id", particle_id, "particle_id[n_part]/I");
   fTree->Branch("Ein_beam", &Ein_beam, "Ein_beam/D");
   fTree->Branch("weight", &weight, "weight/D");
   for (int i=0; i<nentries ; i++) {
